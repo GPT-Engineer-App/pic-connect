@@ -1,16 +1,6 @@
 import { SimpleGrid, Image, Box } from "@chakra-ui/react";
 
-const photos = [
-  // Sample photos, replace with dynamic content in the future
-  "https://via.placeholder.com/150",
-  "https://via.placeholder.com/150",
-  "https://via.placeholder.com/150",
-  "https://via.placeholder.com/150",
-  "https://via.placeholder.com/150",
-  "https://via.placeholder.com/150",
-];
-
-const PhotoGrid = () => {
+const PhotoGrid = ({ photos }) => {
   return (
     <SimpleGrid columns={{ sm: 2, md: 3 }} spacing={4} p={4}>
       {photos.map((src, index) => (
